@@ -70,4 +70,6 @@ for (let i = 1; i < mainContent.children.length; i++) {
     navList.appendChild(li);
 }
 
+currentExperience();
+currentProjects();
 currentCourseWork();

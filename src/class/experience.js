@@ -17,9 +17,8 @@ class Experience {
         const experience = document.getElementById("experience");
         const card = document.createElement("div");
         card.classList.add("card");
-        card.classList.add("child");
 
-        const title = document.createElement("h4");
+        const title = document.createElement("h3");
         title.textContent = this.title;
         card.appendChild(title);
 
@@ -43,4 +42,20 @@ class Experience {
 
         experience.appendChild(card);
     }
+}
+
+function currentExperience(){
+    const akhdani = new Experience(
+        "Software Engineer Intern",
+        "PT Akhdani Reka Solusi",
+        "June 2024 – February 2025 · 9 months · Bandung, West Java, Indonesia · Hybrid",
+        [
+            "Successfully integrated and extended the JsVectorMap library despite limited documentation, adding interactive region-based features dynamically linked to other UI components.",
+            "Implemented performant data tables using Handsontable to handle hundreds to thousands of records efficiently.",
+            "Developed features to convert structured data into responsive Chart.js visualizations on demand.",
+            "Took ownership of complex technical tasks, earning increasing trust and responsibility within the team.",
+        ]
+    );
+
+    akhdani.add();
 }
