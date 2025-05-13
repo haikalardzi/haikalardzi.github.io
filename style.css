@@ -183,11 +183,13 @@ a.disabled{
   font-size: 0.95rem;
   margin-bottom: 1rem;
 }
+.card.child ul{
+  display: flex;
+  gap: .5rem;
+}
 
 .card ul {
   margin: 0;
-  display: flex;
-  gap: .5rem;
 }
 
 .card p, .card li {
