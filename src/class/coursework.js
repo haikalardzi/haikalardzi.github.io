@@ -82,10 +82,18 @@ function currentCourseWork(){
         "A complex web-based e-commerce project using several programming languages, framework, and database to learn about web and microservice (Node.js, Express.js, React.js, JAX-WS, PHP, MySQL, and Docker).",
         ["ts","node", "express", "react", "java", "php", "mysql", 'tailwind', 'docker']
     );
+    const jarkom = new Coursework(
+        "TCP-like protocol using UDP",
+        "https://github.com/haikalardzi/Tubes-Jarkom.git",
+        true,
+        "This project implements a TCP-like protocol using UDP as the underlying transport layer. The primary goal is to provide reliable, connection-oriented communication over the inherently unreliable UDP protocol. This project is implemented in Python 3.10.",
+        ["py"]
+    );
 
     tugasakhir.add();
     capstonebangkit.add();
     wbd.add();
+    jarkom.add();
     grafkomgila.add();
     cookingsim.add();
     galaxiobot.add();
