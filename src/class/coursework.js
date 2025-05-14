@@ -45,7 +45,7 @@ function currentCourseWork(){
     const header = document.createElement('h3');
     header.textContent = "Coursework Projects";
     document.getElementById("coursework-projects").appendChild(header);
-    
+
     new Coursework(
         "🔭 Web-Based Remote Control For Telescope (On-Going Final Year Project)",
         "",
@@ -59,6 +59,20 @@ function currentCourseWork(){
         true,
         "Built a mobile application for financial records using Kotlin, Jetpack Compose, Machine Learning, and Firebase.",
         ["kt", "jetpack", "firebase", "gcp"]
+    );
+    new Coursework(
+        "🛍️ Wannabe E-Commerce Project",
+        "https://github.com/haikalardzi/WBD-ROOT.git",
+        true,
+        "A complex web-based e-commerce project using several programming languages, framework, and database to learn about web and microservice (Node.js, Express.js, React.js, JAX-WS, PHP, MySQL, and Docker).",
+        ["ts","node", "express", "react", "java", "php", "mysql", 'tailwind', 'docker']
+    );
+    new Coursework(
+        "🧊 3D WebGL Hollow & Articulated Model",
+        "https://github.com/haikalardzi/tugas-besar-grafkom-2-aba.git",
+        true,
+        "From scratch (without using Three.js), Implementing a 3D WebGL model with a hollow and articulated structure.",
+        ["html", "css", "js"]
     );
     new Coursework(
         "🤖 Greedy Algorithm Implementation",
@@ -75,21 +89,7 @@ function currentCourseWork(){
         ["c"]
     );
     new Coursework(
-        "3D WebGL Hollow & Articulated Model",
-        "https://github.com/haikalardzi/tugas-besar-grafkom-2-aba.git",
-        true,
-        "From scratch (without using Three.js), Implementing a 3D WebGL model with a hollow and articulated structure.",
-        ["html", "css", "js"]
-    )
-    new Coursework(
-        "Wannabe E-Commerce Project",
-        "https://github.com/haikalardzi/WBD-ROOT.git",
-        true,
-        "A complex web-based e-commerce project using several programming languages, framework, and database to learn about web and microservice (Node.js, Express.js, React.js, JAX-WS, PHP, MySQL, and Docker).",
-        ["ts","node", "express", "react", "java", "php", "mysql", 'tailwind', 'docker']
-    );
-    new Coursework(
-        "TCP-like protocol using UDP",
+        "🛜 TCP-like protocol using UDP",
         "https://github.com/haikalardzi/Tubes-Jarkom.git",
         true,
         "This project implements a TCP-like protocol using UDP as the underlying transport layer. The primary goal is to provide reliable, connection-oriented communication over the inherently unreliable UDP protocol. This project is implemented in Python 3.10.",
