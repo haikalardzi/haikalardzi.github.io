@@ -11,6 +11,8 @@ class Project {
         this.disclosure = disclosure;
         this.description = description;
         this.techstack = techstack;
+
+        this.add();
     }
 
     add(){
@@ -43,12 +45,13 @@ class Project {
 }
 
 function currentProjects(){
-    const project1 = new Project(
+    const header = document.createElement('h2');
+    header.textContent = "🚧 Projects";
+    document.getElementById("projects").appendChild(header);
+    new Project(
         "🔒 Confidential Project (Under NDA)",
         false,
         "Collaborated on a high-impact system during my internship, contributing full-stack features under a non-disclosure agreement. Successfully implemented and extended an under-documented interactive <strong>JsVectorMap</strong> library by adding dynamic interaction features, implemented interactable advanced data table rendering for large datasets using <strong>Handsontable</strong> without performance issues, and also built a module to converted the large tabular data into <strong>Chart.js</strong> visualizations.",
         []
     );
-
-    project1.add();
 }

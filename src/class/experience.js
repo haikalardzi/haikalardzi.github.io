@@ -11,6 +11,8 @@ class Experience {
         this.company = company;
         this.duration = duration;
         this.description = description;
+
+        this.add();
     }
 
     add() {
@@ -45,7 +47,11 @@ class Experience {
 }
 
 function currentExperience(){
-    const akhdani = new Experience(
+    const header = document.createElement('h2');
+    header.textContent = "💼 Experience";
+    document.getElementById("experience").appendChild(header);
+
+    new Experience(
         "Software Engineer Intern",
         "PT Akhdani Reka Solusi",
         "June 2024 – February 2025 · 9 months · Bandung, West Java, Indonesia · Hybrid",
@@ -56,6 +62,4 @@ function currentExperience(){
             "Took ownership of complex technical tasks, earning increasing trust and responsibility within the team.",
         ]
     );
-
-    akhdani.add();
 }
