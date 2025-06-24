@@ -56,10 +56,10 @@ function currentExperience(){
         "PT Akhdani Reka Solusi",
         "June 2024 – February 2025 · 9 months · Bandung, West Java, Indonesia · Hybrid",
         [
-            "Successfully integrated and extended the JsVectorMap library despite limited documentation, adding interactive region-based features dynamically linked to other UI components.",
-            "Implemented performant data tables using Handsontable to handle hundreds to thousands of records efficiently.",
-            "Developed features to convert structured data into responsive Chart.js visualizations on demand.",
-            "Took ownership of complex technical tasks, earning increasing trust and responsibility within the team.",
+            "Develop, test, and maintain web and backend applications according to client requirements and internal company standards.",
+            "Work in cross-functional teams using Agile/Scrum methodologies to design modular, scalable, and maintainable software solutions.",
+            "Contribute to the entire software development life cycle, from requirements analysis, architecture design, implementation, to deployment and support.",
+            "Utilize modern technologies such as JavaScript/TypeScript, React, Node.js, Python, PostgreSQL with laravel as the main framework.",
         ]
     );
 }

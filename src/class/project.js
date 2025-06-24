@@ -29,7 +29,7 @@ class Project {
         card.appendChild(description);
 
         // if non-diclosure display tech stack as secret
-        if (this.disclosure) {
+        // if (this.disclosure) {
             const techstackHeader = document.createElement("h4");
             techstackHeader.textContent = "-----Tech Stack-----";
             const techstack = document.createElement("ul");
@@ -38,7 +38,7 @@ class Project {
             card.appendChild(techstackHeader);
             card.appendChild(techstack);
 
-        }
+        // }
 
         project.appendChild(card);
     }
@@ -51,7 +51,7 @@ function currentProjects(){
     new Project(
         "🔒 Confidential Project (Under NDA)",
         false,
-        "Collaborated on a high-impact system during my internship, contributing full-stack features under a non-disclosure agreement. Successfully implemented and extended an under-documented interactive <strong>JsVectorMap</strong> library by adding dynamic interaction features, implemented interactable advanced data table rendering for large datasets using <strong>Handsontable</strong> without performance issues, and also built a module to converted the large tabular data into <strong>Chart.js</strong> visualizations.",
-        []
+        "Collaborated on a high-impact system during my internship, contributing <strong>laravel-based</strong> full-stack features under a non-disclosure agreement. Successfully implemented and extended an under-documented interactive <strong>JsVectorMap</strong> library by adding dynamic interaction features, implemented interactable advanced data table rendering for large datasets using <strong>Handsontable</strong> without performance issues, and also built a module to converted the large tabular data into <strong>Chart.js</strong> visualizations.",
+        ["laravel", "html", "css", "js", "bs", "chartjs"]
     );
 }
