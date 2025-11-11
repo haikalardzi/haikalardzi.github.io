@@ -28,17 +28,13 @@ class Project {
         description.innerHTML = this.description;
         card.appendChild(description);
 
-        // if non-diclosure display tech stack as secret
-        // if (this.disclosure) {
-            const techstackHeader = document.createElement("h4");
-            techstackHeader.textContent = "-----Tech Stack-----";
-            const techstack = document.createElement("ul");
-            this.techstack.forEach(tech => techstack.appendChild(getTechStackLogo(tech)));
-            
-            card.appendChild(techstackHeader);
-            card.appendChild(techstack);
-
-        // }
+        const techstackHeader = document.createElement("h4");
+        techstackHeader.textContent = "-----Tech Stack-----";
+        const techstack = document.createElement("ul");
+        this.techstack.forEach(tech => techstack.appendChild(getTechStackLogo(tech)));
+        
+        card.appendChild(techstackHeader);
+        card.appendChild(techstack);
 
         project.appendChild(card);
     }
@@ -49,9 +45,21 @@ function currentProjects(){
     header.textContent = "🚧 Projects";
     document.getElementById("projects").appendChild(header);
     new Project(
-        "🔒 Confidential Project (Under NDA)",
+        "🔒 Nation-Scale Monitoring & Analytics Dashboard and Management",
         false,
-        "Collaborated on a high-impact system during my internship, contributing <strong>laravel-based</strong> full-stack features under a non-disclosure agreement. Successfully implemented and extended an under-documented interactive <strong>JsVectorMap</strong> library by adding dynamic interaction features, implemented interactable advanced data table rendering for large datasets using <strong>Handsontable</strong> without performance issues, and also built a module to converted the large tabular data into <strong>Chart.js</strong> visualizations.",
-        ["laravel", "html", "css", "js", "bs", "chartjs"]
+        "Contributed to develop a large-scale national platform that centralizes and visualizes state-wide operational data to support risk monitoring, decision-making, and performance analysis across multiple regions.",
+        ["laravel", "html","css","jquery","js", "bs", "chartjs"]
     );
+    new Project(
+        "🔭 Prototype Web-Based Telescope Remote Control (Final Project - Capstone)",
+        true,
+        "Developed a full-stack web application enabling real-time remote control and live video streaming of a robotic telescope for Imahnoong Observatory.",
+        ["fastify", "react", "pg", "ffmpeg", "websocket", "cloudflare"]
+    );
+    new Project(
+        "Information System for Supply and Distribution",
+        false,
+        "Contributed to enhance a legacy web application for Supply and Demand Management.",
+        ["vb.net", "mssql"]
+    )
 }

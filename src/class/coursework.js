@@ -47,13 +47,6 @@ function currentCourseWork(){
     document.getElementById("coursework-projects").appendChild(header);
 
     new Coursework(
-        "🔭 Web-Based Remote Control For Telescope (On-Going Final Year Project)",
-        "",
-        false,
-        "Built a live-streaming and remote control system using uWebSockets.js to provide real-time control and low latency video feeds.",
-        ["node", "react", "fastify", "uwebsocket", "nginx", "linux"]
-    );
-    new Coursework(
         "💸 Financial Records App (Bangkit Academy Capstone Project)",
         "https://github.com/haikalardzi/Classifund-MD-Backup.git",
         true,

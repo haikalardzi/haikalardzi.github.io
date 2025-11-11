@@ -58,8 +58,7 @@ function currentExperience(){
         [
             "Develop, test, and maintain web and backend applications according to client requirements and internal company standards.",
             "Work in cross-functional teams using Agile/Scrum methodologies to design modular, scalable, and maintainable software solutions.",
-            "Contribute to the entire software development life cycle, from requirements analysis, architecture design, implementation, to deployment and support.",
-            "Utilize modern technologies such as JavaScript/TypeScript, React, Node.js, Python, PostgreSQL with laravel as the main framework.",
+            "Contribute to the entire software development life cycle, from requirements analysis, architecture design, implementation, to deployment and support."        
         ]
     );
 }
