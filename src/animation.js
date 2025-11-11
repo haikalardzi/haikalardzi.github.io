@@ -131,8 +131,8 @@ const bg = document.getElementById('animated-bg');
 
     // Create floating code symbols
     function createFloatingElements() {
-      const symbols = ['{ }', '< >', '( )', '[ ]', '/>', '<=', '=>', '!='];
-      const elementCount = 15;
+      const symbols = ['{ }', '( )', '[ ]', '/>', '<=', '=>', '!='];
+      const elementCount = 30;
       
       for (let i = 0; i < elementCount; i++) {
         const element = document.createElement('div');
@@ -141,7 +141,7 @@ const bg = document.getElementById('animated-bg');
         element.style.left = `${Math.random() * 100}%`;
         element.style.top = `${Math.random() * 100}%`;
         element.style.fontSize = `${20 + Math.random() * 30}px`;
-        element.style.color = `rgba(100, 150, 255, ${Math.random() * 0.3 + 0.1})`;
+        element.style.color = `rgba(240, 240, 240, 1)`;
         element.style.fontFamily = 'monospace';
         element.style.fontWeight = 'bold';
         

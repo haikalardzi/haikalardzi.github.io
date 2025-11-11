@@ -52,8 +52,8 @@ function currentExperience(){
     document.getElementById("experience").appendChild(header);
 
     new Experience(
-        "Software Engineer Intern",
-        "PT Akhdani Reka Solusi",
+        "Software Engineer",
+        "PT Akhdani Reka Solusi · Intership",
         "June 2024 – February 2025 · 9 months · Bandung, West Java, Indonesia · Hybrid",
         [
             "Develop, test, and maintain web and backend applications according to client requirements and internal company standards.",
