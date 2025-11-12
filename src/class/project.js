@@ -28,13 +28,25 @@ class Project {
         description.innerHTML = this.description;
         card.appendChild(description);
 
-        const techstackHeader = document.createElement("h4");
-        techstackHeader.textContent = "-----Tech Stack-----";
+        const techstackSection = document.createElement("div");
+        techstackSection.className = "tech-stack-section";
+
+        const techstackHeader = document.createElement("div");
+        techstackHeader.className = "tech-stack-header";
+        techstackHeader.innerHTML = `
+        <h4>
+        <span class="tech-stack-icon">⚡</span>
+        <span class="tech-stack-title">Tech Stack</span>
+        </h4>`;
+
         const techstack = document.createElement("ul");
+        techstack.className = "tech-stack-list";
         this.techstack.forEach(tech => techstack.appendChild(getTechStackLogo(tech)));
-        
-        card.appendChild(techstackHeader);
-        card.appendChild(techstack);
+
+        techstackSection.appendChild(techstackHeader);
+        techstackSection.appendChild(techstack);
+        card.appendChild(techstackSection);
+
 
         project.appendChild(card);
     }
