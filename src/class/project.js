@@ -71,7 +71,7 @@ function currentProjects(){
     new Project(
         "Information System for Supply and Distribution",
         false,
-        "Contributed to enhance a legacy web application for Supply and Demand Management.",
+        "Contributed to enhance a legacy web application for Supply and Distribution Management.",
         ["vb.net", "mssql"]
     )
 }
