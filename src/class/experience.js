@@ -50,15 +50,22 @@ function currentExperience(){
     const header = document.createElement('h2');
     header.textContent = "💼 Experience";
     document.getElementById("experience").appendChild(header);
+    new Experience(
+        "Software Engineer",
+        "PT Akhdani Reka Solusi · Fulltime",
+        "September 2025 - Present · 11 months · Bandung, West Java, Indonesia · Hybrid",
+        [
+            "Designed and developed ETL/data pipelines using Talend Studio (desktop ) and validated through testing and job monitoring in Talend Administration Center (TAC).",
+            "Implemented and Designed numbers of application/web using range of tools as Java, PHP, Python, and JavaScript/TypeScript, building web applications with Spring Boot, Laravel, and Vue.js, and working across relational and in-memory databases (MSSQL, MySQL, PostgreSQL, Redis)."
+        ]
+    )
 
     new Experience(
         "Software Engineer",
         "PT Akhdani Reka Solusi · Intership",
         "June 2024 – February 2025 · 9 months · Bandung, West Java, Indonesia · Hybrid",
         [
-            "Develop, test, and maintain web and backend applications according to client requirements and internal company standards.",
-            "Work in cross-functional teams using Agile/Scrum methodologies to design modular, scalable, and maintainable software solutions.",
-            "Contribute to the entire software development life cycle, from requirements analysis, architecture design, implementation, to deployment and support."        
+            "Contributed to developing a dashboard application using Laravel, ChartJS, Handsontable, JsVectorMap" 
         ]
     );
 }

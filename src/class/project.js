@@ -57,6 +57,18 @@ function currentProjects(){
     header.textContent = "🚧 Projects";
     document.getElementById("projects").appendChild(header);
     new Project(
+        "🔒 Asset Decommissioning and Monitoring Platform",
+        false,
+        "Designed and delivered a new feature outside the original project scope, introducing a distinct database interaction pattern that differed from all previously implemented features and expanding the system's technical capability beyond initial requirements",
+        ["java", "html", "css", "ts", "pg", "vue", "tailwind", "spring"]
+    )
+    new Project(
+        "🔒 Desktop App for Weather and Disaster Alert",
+        false,
+        "Contributed to Develop and Design a desktop application for nation-wide early warning system to mitigate risk assets of regions affected by disruptive weather and disasters",
+        ["py", "gemini", "openapi"]
+    )
+    new Project(
         "🔒 Nation-Scale Monitoring & Analytics Dashboard and Management",
         false,
         "Contributed to develop a large-scale national platform that centralizes and visualizes state-wide operational data to support risk monitoring, decision-making, and performance analysis across multiple regions.",
@@ -73,5 +85,11 @@ function currentProjects(){
         false,
         "Contributed to enhance a legacy web application for Supply and Distribution Management.",
         ["vb.net", "mssql"]
+    )
+    new Project(
+        "🔒 ETL Development and Testing for Big Data",
+        false,
+        "Designed and developed ETL pipelines using Talend Studio, integrating data from multiple sources into Apache Hive",
+        ["pg"]
     )
 }
